@@ -8,19 +8,16 @@ import Logo from "../../assets/Logo/Logo-Full-Light.png";
 // Icons
 import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa";
 
-const BottomFooter = ["Privacy Policy", "Cookie Policy", "Terms"];
+const BottomFooter = [];
 const Resources = [
   "Articles",
   "Blog",
-  "Chart Sheet",
   "Code challenges",
-  "Docs",
-  "Projects",
   "Videos",
   "Workspaces",
 ];
-const Plans = ["Paid memberships", "For students", "Business solutions"];
-const Community = ["Forums", "Chapters", "Events"];
+const Plans = ["Paid memberships", "For students"];
+const Community = ["Chapters", "Events"];
 
 const Footer = () => {
   return (
@@ -35,7 +32,7 @@ const Footer = () => {
                 Company
               </h1>
               <div className="flex flex-col gap-2">
-                {["About", "Careers", "Affiliates"].map((ele, i) => {
+                {["About", "Careers"].map((ele, i) => {
                   return (
                     <div
                       key={i}
@@ -172,7 +169,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center">Made with ❤️ © 2023 Studynotion</div>
+          <div className="text-center">Made with ❤️ © 2023 Skill Flare</div>
         </div>
       </div>
     </div>
